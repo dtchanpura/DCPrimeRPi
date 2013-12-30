@@ -7,7 +7,7 @@ from twython import Twython
 from time import sleep
 from twitter_keys import *
 lcd = lcdDisplay() #Object named lcd for using all the functions of lcdDisplay.py
-#Contents of ../twitter.py 
+#Contents of twitter_keys.py 
 #CONSUMER_KEY='############YOUR APP##################################'
 #CONSUMER_SECRET = '##########KEYS####################################'
 #ACCESS_KEY = '###############FROM##http://dev.twitter.com##############'
