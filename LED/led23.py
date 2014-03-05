@@ -1,7 +1,7 @@
 from time import sleep
 import sys
 
-argmnt=sys.argv
+argmnt=str(sys.argv[1])
 def main():
 	import RPi.GPIO as GPIO
 	GPIO.setmode(GPIO.BCM)
