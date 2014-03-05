@@ -6,9 +6,9 @@ def main():
 	import RPi.GPIO as GPIO
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(23,GPIO.OUT)
-	if argmnt == "ON":
+	if argmnt == 'ON':
 		GPIO.output(23,True)
-	elif argmnt == "OFF":
+	elif argmnt == 'OFF':
 		GPIO.output(23,False)
 	else:
 		for i in range(0,10):	
