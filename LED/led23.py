@@ -1,4 +1,6 @@
+from time import sleep
 import sys
+
 argmnt=sys.argv
 def main():
 	import RPi.GPIO as GPIO
@@ -9,9 +11,12 @@ def main():
 	elif argmnt == "OFF":
 		GPIO.output(23,False)
 	else:
-		GPIO.output(23,True)
-		sleep(100)
-		GPIO.output(23,False)
+		for i in range(0,10):	
+			GPIO.output(23,True)
+			sleep(1)
+			GPIO.output(23,False)
+			sleep(1)
+
 
 if __name__== '__main__':
 	main()
